@@ -1,0 +1,47 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "eslint:recommended"
+  ],
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-sort-props": [
+      "warn",
+      {
+        "callbacksLast": false,
+        "shorthandFirst": false,
+        "shorthandLast": false,
+        "ignoreCase": true,
+        "noSortAlphabetically": false,
+        "reservedFirst": false
+      }
+    ],
+    "no-unused-vars": "warn",
+    "no-extra-boolean-cast": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/no-unescaped-entities": "off"
+    // `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.eslint
+    // "unused-imports/no-unused-imports": "warn",
+    // "unused-imports/no-unused-vars": [
+    //   "warn",
+    //   {
+    //     "vars": "all",
+    //     "varsIgnorePattern": "^_",
+    //     "args": "after-used",
+    //     "argsIgnorePattern": "^_"
+    //   }
+    // ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
+
+// {
+//   "extends": "next/core-web-vitals"
+// }
